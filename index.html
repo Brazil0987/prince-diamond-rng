@@ -721,10 +721,10 @@
   </div>
 
   <div id="pookowskiOverlay">
-    <div class="pookowski-title">🚨 CHEETER TIER 🚨</div>
+    <div class="pookowski-title">🚨 BBC HUT TIER 🚨</div>
     <img class="pookowski-image" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%3Crect%20width%3D%22512%22%20height%3D%22512%22%20rx%3D%2290%22%20fill%3D%22%23111827%22/%3E%3Ctext%20x%3D%22256%22%20y%3D%22220%22%20text-anchor%3D%22middle%22%20font-size%3D%22140%22%3E%F0%9F%92%8E%3C/text%3E%3Ctext%20x%3D%22256%22%20y%3D%22340%22%20text-anchor%3D%22middle%22%20font-size%3D%2244%22%20font-family%3D%22Arial%22%20font-weight%3D%22700%22%20fill%3D%22%23ffffff%22%3ERARE%3C/text%3E%3C/svg%3E">
-    <div class="pookowski-subtitle">POOKOWSKI HAS ARRIVED</div>
-    <button class="pookowski-close" onclick="closePookowskiAnimation()">Continue</button>
+    <div class="pookowski-subtitle">BBC HUT HAS ARRIVED</div>
+    <button class="pookowski-close" onclick="closeBBC HUTAnimation()">Continue</button>
   </div>
 
   <header>
@@ -743,7 +743,7 @@
     <button onclick="showPage('roll')" class="active">Roll</button>
     <button onclick="showPage('items')">Items</button>
     <button onclick="showPage('achievements')">Achievements</button>
-    <button onclick="showPage('cheetHut')">Diamond Hut</button>
+    <button onclick="showPage('cheetHut')">BBC HUT</button>
     <button onclick="showPage('rarities')">Rarities</button>
     <button onclick="showPage('leaderboard')">Leaderboard</button>
   </div>
@@ -787,19 +787,14 @@
   </div>
 
   <div id="cheetHutPage" style="display:none;">
-    <h2>🛖 Diamond Hut</h2>
-
-      <img class="diamond-hut-badge" src="data:image/png;base64,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" alt="Prince Diamond badge">
-      <div class="diamond-hut-badge-text">Prince Diamond Power</div>
-
-
-    <div class="cheet-hut-box">
-      <img class="cheet-hut-img" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%3Crect%20width%3D%22512%22%20height%3D%22512%22%20rx%3D%2290%22%20fill%3D%22%233b2f1e%22/%3E%3Ctext%20x%3D%22256%22%20y%3D%22220%22%20text-anchor%3D%22middle%22%20font-size%3D%22140%22%3E%F0%9F%92%8E%3C/text%3E%3Ctext%20x%3D%22256%22%20y%3D%22340%22%20text-anchor%3D%22middle%22%20font-size%3D%2244%22%20font-family%3D%22Arial%22%20font-weight%3D%22700%22%20fill%3D%22%23ffffff%22%3EHut%3C/text%3E%3C/svg%3E">
+    <h2>🛖 BBC HUT</h2>
+<div class="cheet-hut-box">
+      <img class="cheet-hut-img" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22900%22%20height%3D%22560%22%20viewBox%3D%220%200%20900%20560%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22sky%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230b1026%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2255%25%22%20stop-color%3D%22%2313265d%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23070b1d%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22hut%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%238b5a2b%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%233b2414%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%20%20%3Cfilter%20id%3D%22glow%22%3E%0A%20%20%20%20%20%20%3CfeGaussianBlur%20stdDeviation%3D%225%22%20result%3D%22blur%22/%3E%0A%20%20%20%20%20%20%3CfeMerge%3E%0A%20%20%20%20%20%20%20%20%3CfeMergeNode%20in%3D%22blur%22/%3E%0A%20%20%20%20%20%20%20%20%3CfeMergeNode%20in%3D%22SourceGraphic%22/%3E%0A%20%20%20%20%20%20%3C/feMerge%3E%0A%20%20%20%20%3C/filter%3E%0A%20%20%3C/defs%3E%0A%0A%20%20%3Crect%20width%3D%22900%22%20height%3D%22560%22%20fill%3D%22url%28%23sky%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22735%22%20cy%3D%22105%22%20r%3D%2244%22%20fill%3D%22%23ffd700%22%20opacity%3D%220.9%22%20filter%3D%22url%28%23glow%29%22/%3E%0A%20%20%3Crect%20y%3D%22420%22%20width%3D%22900%22%20height%3D%22140%22%20fill%3D%22%2312381d%22/%3E%0A%0A%20%20%3Cpath%20d%3D%22M120%20430%20C210%20380%20305%20405%20390%20430%20C520%20470%20640%20375%20790%20430%20L790%20560%20L120%20560%20Z%22%20fill%3D%22%230d2d18%22/%3E%0A%20%20%3Cpath%20d%3D%22M185%20258%20L450%2095%20L715%20258%20Z%22%20fill%3D%22%236b3f18%22%20stroke%3D%22%23ffd700%22%20stroke-width%3D%228%22%20filter%3D%22url%28%23glow%29%22/%3E%0A%20%20%3Cpath%20d%3D%22M245%20248%20L450%20128%20L655%20248%20Z%22%20fill%3D%22%23b47a32%22/%3E%0A%20%20%3Crect%20x%3D%22235%22%20y%3D%22258%22%20width%3D%22430%22%20height%3D%22220%22%20rx%3D%2226%22%20fill%3D%22url%28%23hut%29%22%20stroke%3D%22%235efcff%22%20stroke-width%3D%227%22/%3E%0A%20%20%3Crect%20x%3D%22391%22%20y%3D%22335%22%20width%3D%22118%22%20height%3D%22143%22%20rx%3D%2214%22%20fill%3D%22%2310100a%22%20stroke%3D%22%23ffd700%22%20stroke-width%3D%226%22/%3E%0A%20%20%3Ccircle%20cx%3D%22490%22%20cy%3D%22406%22%20r%3D%226%22%20fill%3D%22%235efcff%22/%3E%0A%20%20%3Crect%20x%3D%22277%22%20y%3D%22310%22%20width%3D%2280%22%20height%3D%2270%22%20rx%3D%2212%22%20fill%3D%22%23061328%22%20stroke%3D%22%235efcff%22%20stroke-width%3D%225%22/%3E%0A%20%20%3Crect%20x%3D%22543%22%20y%3D%22310%22%20width%3D%2280%22%20height%3D%2270%22%20rx%3D%2212%22%20fill%3D%22%23061328%22%20stroke%3D%22%235efcff%22%20stroke-width%3D%225%22/%3E%0A%0A%20%20%3Crect%20x%3D%22290%22%20y%3D%22205%22%20width%3D%22320%22%20height%3D%2282%22%20rx%3D%2218%22%20fill%3D%22%23050816%22%20stroke%3D%22%235efcff%22%20stroke-width%3D%226%22%20filter%3D%22url%28%23glow%29%22/%3E%0A%20%20%3Ctext%20x%3D%22450%22%20y%3D%22260%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2254%22%20font-weight%3D%22900%22%20fill%3D%22%23ffd700%22%20stroke%3D%22%237b2cff%22%20stroke-width%3D%222%22%3EBBC%20HUT%3C/text%3E%0A%0A%20%20%3Ctext%20x%3D%22450%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%235efcff%22%3EPrince%20Diamond%20RNG%3C/text%3E%0A%3C/svg%3E">
 
 
       <div class="chet-panel">
-        <h3>🟢 Chet Panel</h3>
-        <p>Welcome to the Diamond Hut.</p>
+        <h3>💎 BBC HUT Panel</h3>
+        <p>Welcome to the BBC HUT.</p>
         <p class="coin-text">Diamond Coins: <span id="hutCoinCount">0</span></p>
         <p class="coin-text">Total Earned: <span id="hutTotalCoinCount">0</span></p>
         <p>Rarer items give more Diamond Coins. Spend coins on upgrades.</p>
@@ -848,7 +843,7 @@
         </div>
 
         <div class="shop-card">
-          <h3>🎁 Diamond Hut Reward</h3>
+          <h3>🎁 BBC HUT Reward</h3>
           <p>Claim free coins every 24 hours.</p>
           <p>Streak: <span id="hutStreakCount">0</span> day(s)</p>
           <p>Reward: <span id="dailyRewardAmount">500</span> coins</p>
@@ -997,7 +992,7 @@
     }
 
     let cheetCoins = 0;
-    let totalCheetCoinsEarned = 0;
+    let totalDiamondCoinsEarned = 0;
     let upgrades = { luck: 0, speed: 0, secret: 0, coin: 0 };
     let lastHutReward = 0;
     let hutStreak = 0;
@@ -1085,7 +1080,7 @@
       }, 4000);
     }
 
-    function showPookowskiAnimation() {
+    function showBBC HUTAnimation() {
       let overlay = document.getElementById("pookowskiOverlay");
       overlay.classList.add("show");
       overlay.classList.remove("ready");
@@ -1095,7 +1090,7 @@
       }, 3300);
     }
 
-    function closePookowskiAnimation() {
+    function closeBBC HUTAnimation() {
       document.getElementById("pookowskiOverlay").classList.remove("show");
       document.getElementById("pookowskiOverlay").classList.remove("ready");
     }
@@ -1132,7 +1127,7 @@
       return 1 + upgrades.luck * 0.04 + upgrades.secret * 0.12;
     }
 
-    function getCheeterSecretMultiplier() {
+    function getBBC HUTSecretMultiplier() {
       return 1 + upgrades.luck * 0.04 + upgrades.secret * 0.15;
     }
 
@@ -1170,7 +1165,7 @@
         firstLegendary: 250,
         firstMythic: 500,
         firstSecret: 2500,
-        firstCheeter: 100000,
+        firstBBC HUT: 100000,
         firstDuplicate: 100,
         coinCollector: 250,
         coinHoarder: 2500,
@@ -1249,16 +1244,16 @@
       }
 
       cheetCoins += amount;
-      totalCheetCoinsEarned += amount;
+      totalDiamondCoinsEarned += amount;
       checkCoinAchievements();
     }
 
     function checkCoinAchievements() {
-      if (totalCheetCoinsEarned >= 1000) unlockAchievement("coinCollector");
-      if (totalCheetCoinsEarned >= 100000) unlockAchievement("coinHoarder");
-      if (totalCheetCoinsEarned >= 1000000) unlockAchievement("coinMillion");
-      if (totalCheetCoinsEarned >= 10000000) unlockAchievement("coinTenMillion");
-      if (totalCheetCoinsEarned >= 100000000) unlockAchievement("coinHundredMillion");
+      if (totalDiamondCoinsEarned >= 1000) unlockAchievement("coinCollector");
+      if (totalDiamondCoinsEarned >= 100000) unlockAchievement("coinHoarder");
+      if (totalDiamondCoinsEarned >= 1000000) unlockAchievement("coinMillion");
+      if (totalDiamondCoinsEarned >= 10000000) unlockAchievement("coinTenMillion");
+      if (totalDiamondCoinsEarned >= 100000000) unlockAchievement("coinHundredMillion");
     }
 
     function unlockAchievement(id) {
@@ -1328,7 +1323,7 @@
 
     function getWorshipCost() {
       let upgradeCost = getTotalUpgradeLevels() * 4;
-      let earnedCost = Math.floor(Math.sqrt(Math.max(totalCheetCoinsEarned || 0, 0)) / 350);
+      let earnedCost = Math.floor(Math.sqrt(Math.max(totalDiamondCoinsEarned || 0, 0)) / 350);
       let cost = 40 + upgradeCost + earnedCost;
 
       return cost;
@@ -1337,8 +1332,8 @@
     function updateCoinsAndShop() {
       document.getElementById("coinCount").textContent = cheetCoins;
       document.getElementById("hutCoinCount").textContent = cheetCoins;
-      document.getElementById("totalCoinCount").textContent = totalCheetCoinsEarned;
-      document.getElementById("hutTotalCoinCount").textContent = totalCheetCoinsEarned;
+      document.getElementById("totalCoinCount").textContent = totalDiamondCoinsEarned;
+      document.getElementById("hutTotalCoinCount").textContent = totalDiamondCoinsEarned;
 
       document.getElementById("luckLevel").textContent = upgrades.luck;
       document.getElementById("speedLevel").textContent = upgrades.speed;
@@ -1366,11 +1361,11 @@
       document.getElementById("speedMultiplierText").textContent = getSpeedDisplayMultiplier().toFixed(2) + "x";
 
       document.getElementById("secretMultiplierText").textContent = getSecretMultiplier().toFixed(2) + "x";
-      document.getElementById("cheeterMultiplierText").textContent = getCheeterSecretMultiplier().toFixed(2) + "x";
+      document.getElementById("cheeterMultiplierText").textContent = getBBC HUTSecretMultiplier().toFixed(2) + "x";
       document.getElementById("secretWithDimisLuckText").textContent = (getSecretMultiplier() * 1.2).toFixed(2) + "x";
-      document.getElementById("cheeterWithDimisLuckText").textContent = (getCheeterSecretMultiplier() * 1.2).toFixed(2) + "x";
+      document.getElementById("cheeterWithDimisLuckText").textContent = (getBBC HUTSecretMultiplier() * 1.2).toFixed(2) + "x";
       document.getElementById("secretWithDimisMiracleText").textContent = (getSecretMultiplier() * 1.35).toFixed(2) + "x";
-      document.getElementById("cheeterWithDimisMiracleText").textContent = (getCheeterSecretMultiplier() * 1.35).toFixed(2) + "x";
+      document.getElementById("cheeterWithDimisMiracleText").textContent = (getBBC HUTSecretMultiplier() * 1.35).toFixed(2) + "x";
 
       document.getElementById("coinMultiplierText").textContent = getCoinMultiplier().toFixed(2) + "x";
 
@@ -1526,7 +1521,7 @@
         bestScore = 0;
         bestItem = "None";
         cheetCoins = 0;
-        totalCheetCoinsEarned = 0;
+        totalDiamondCoinsEarned = 0;
         upgrades = { luck: 0, speed: 0, secret: 0, coin: 0 };
         lastHutReward = 0;
         hutStreak = 0;
@@ -1573,7 +1568,7 @@
         inventory = data.inventory || {};
         achievements = data.achievements || {};
         cheetCoins = data.cheetCoins || 0;
-        totalCheetCoinsEarned = data.totalCheetCoinsEarned || cheetCoins || 0;
+        totalDiamondCoinsEarned = data.totalDiamondCoinsEarned || cheetCoins || 0;
         upgrades = data.upgrades || { luck: 0, speed: 0, secret: 0, coin: 0 };
         lastHutReward = data.lastHutReward || 0;
         hutStreak = data.hutStreak || 0;
@@ -1601,7 +1596,7 @@
           inventory: {},
           achievements: {},
           cheetCoins: 0,
-          totalCheetCoinsEarned: 0,
+          totalDiamondCoinsEarned: 0,
           upgrades: upgrades,
           lastHutReward: 0,
           hutStreak: 0,
@@ -1682,7 +1677,7 @@
         inventory: inventory,
         achievements: achievements,
         cheetCoins: cheetCoins,
-        totalCheetCoinsEarned: totalCheetCoinsEarned,
+        totalDiamondCoinsEarned: totalDiamondCoinsEarned,
         upgrades: upgrades,
         lastHutReward: lastHutReward,
         hutStreak: hutStreak,
@@ -1741,7 +1736,7 @@
 
       if (item.chance >= 1000 || item.rarity === "cheeter") {
         if (item.rarity === "cheeter") {
-          announcement.textContent = "🚨 CHEETER TIER PULLED! " + username + " got " + item.name + "! 🚨";
+          announcement.textContent = "🚨 BBC HUT TIER PULLED! " + username + " got " + item.name + "! 🚨";
         } else {
           announcement.textContent = "✨ RARE PULL! " + username + " got " + item.name + " - " + formatChance(item.chance) + "! ✨";
         }
@@ -1999,8 +1994,8 @@
 
       showRarityAnnouncement(item);
 
-      if (item.name === "Pookowski") {
-        showPookowskiAnimation();
+      if (item.name === "BBC HUT") {
+        showBBC HUTAnimation();
       }
 
       document.getElementById("resultName").classList.remove("rolling");
@@ -2177,7 +2172,7 @@
       }
 
       let bestCaughtItem = null;
-      let caughtPookowski = false;
+      let caughtBBC HUT = false;
       let totalCoinReward = 0;
 
       for (let i = 0; i < missedRolls; i++) {
@@ -2204,8 +2199,8 @@
           bestCaughtItem = item;
         }
 
-        if (item.name === "Pookowski") {
-          caughtPookowski = true;
+        if (item.name === "BBC HUT") {
+          caughtBBC HUT = true;
         }
 
         checkAchievements(item);
@@ -2213,7 +2208,7 @@
 
       document.getElementById("rollCount").textContent = rolls;
       document.getElementById("coinCount").textContent = cheetCoins;
-      document.getElementById("totalCoinCount").textContent = totalCheetCoinsEarned;
+      document.getElementById("totalCoinCount").textContent = totalDiamondCoinsEarned;
       document.getElementById("bestItem").textContent = bestItem;
 
       updateItems();
@@ -2236,8 +2231,8 @@
         showRarityAnnouncement(bestCaughtItem);
       }
 
-      if (caughtPookowski) {
-        showPookowskiAnimation();
+      if (caughtBBC HUT) {
+        showBBC HUTAnimation();
       }
 
       let wasAutoRolling = autoRollEnabled;
@@ -2515,7 +2510,7 @@
     window.buyUpgrade = buyUpgrade;
     window.claimHutReward = claimHutReward;
     window.worshipDimis = worshipDimis;
-    window.closePookowskiAnimation = closePookowskiAnimation;
+    window.closeBBC HUTAnimation = closeBBC HUTAnimation;
     window.hideAfkCatchupPopup = hideAfkCatchupPopup;
     window.hideAchievementPopup = hideAchievementPopup;
 

@@ -953,10 +953,10 @@
     const achievementList = [
       { id: "firstRoll", name: "First Roll", description: "Roll 1 time" },
       { id: "tenRolls", name: "10 Rolls", description: "Roll 10 times" },
-      { id: "hund#ff4fd8Rolls", name: "100 Rolls", description: "Roll 100 times" },
+      { id: "hundredRolls", name: "100 Rolls", description: "Roll 100 times" },
       { id: "thousandRolls", name: "1,000 Rolls", description: "Roll 1,000 times" },
       { id: "tenThousandRolls", name: "10,000 Rolls", description: "Roll 10,000 times" },
-      { id: "hund#ff4fd8ThousandRolls", name: "100,000 Rolls", description: "Roll 100,000 times" },
+      { id: "hundredThousandRolls", name: "100,000 Rolls", description: "Roll 100,000 times" },
       { id: "millionRolls", name: "1,000,000 Rolls", description: "Roll 1,000,000 times" },
       { id: "tenMillionRolls", name: "10,000,000 Rolls", description: "Roll 10,000,000 times" },
 
@@ -964,7 +964,7 @@
       { id: "coinHoarder", name: "Coin Hoarder", description: "Earn 100,000 total Diamond Coins" },
       { id: "coinMillion", name: "Diamond Millionaire", description: "Earn 1,000,000 total Diamond Coins" },
       { id: "coinTenMillion", name: "Diamond Tycoon", description: "Earn 10,000,000 total Diamond Coins" },
-      { id: "coinHund#ff4fd8Million", name: "Diamond Billionaire", description: "Earn 100,000,000 total Diamond Coins" },
+      { id: "coinHundredMillion", name: "Diamond Billionaire", description: "Earn 100,000,000 total Diamond Coins" },
 
       { id: "firstUpgrade", name: "First Upgrade", description: "Buy any upgrade" },
       { id: "coinMultiplier", name: "Coin Multiplier", description: "Buy the Coin Multiplier upgrade" },
@@ -1158,10 +1158,10 @@
       let rewards = {
         firstRoll: 25,
         tenRolls: 50,
-        hund#ff4fd8Rolls: 100,
+        hundredRolls: 100,
         thousandRolls: 250,
         tenThousandRolls: 750,
-        hund#ff4fd8ThousandRolls: 2500,
+        hundredThousandRolls: 2500,
         millionRolls: 10000,
         tenMillionRolls: 50000,
         firstRare: 50,
@@ -1175,7 +1175,7 @@
         coinHoarder: 2500,
         coinMillion: 10000,
         coinTenMillion: 50000,
-        coinHund#ff4fd8Million: 250000,
+        coinHundredMillion: 250000,
         firstUpgrade: 250,
         coinMultiplier: 500,
         firstWorship: 250,
@@ -1257,7 +1257,7 @@
       if (totalCheetCoinsEarned >= 100000) unlockAchievement("coinHoarder");
       if (totalCheetCoinsEarned >= 1000000) unlockAchievement("coinMillion");
       if (totalCheetCoinsEarned >= 10000000) unlockAchievement("coinTenMillion");
-      if (totalCheetCoinsEarned >= 100000000) unlockAchievement("coinHund#ff4fd8Million");
+      if (totalCheetCoinsEarned >= 100000000) unlockAchievement("coinHundredMillion");
     }
 
     function unlockAchievement(id) {
@@ -2376,10 +2376,10 @@
     function checkAchievements(item) {
       if (rolls >= 1) unlockAchievement("firstRoll");
       if (rolls >= 10) unlockAchievement("tenRolls");
-      if (rolls >= 100) unlockAchievement("hund#ff4fd8Rolls");
+      if (rolls >= 100) unlockAchievement("hundredRolls");
       if (rolls >= 1000) unlockAchievement("thousandRolls");
       if (rolls >= 10000) unlockAchievement("tenThousandRolls");
-      if (rolls >= 100000) unlockAchievement("hund#ff4fd8ThousandRolls");
+      if (rolls >= 100000) unlockAchievement("hundredThousandRolls");
       if (rolls >= 1000000) unlockAchievement("millionRolls");
       if (rolls >= 10000000) unlockAchievement("tenMillionRolls");
 

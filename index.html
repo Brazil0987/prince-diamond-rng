@@ -1207,7 +1207,7 @@
     }
 
 
-    function addPrince DiamondCoins(amount) {
+    function addDiamondCoins(amount) {
       amount = Math.floor(amount);
 
       if (amount <= 0) {
@@ -1231,7 +1231,7 @@
       if (!achievements[id]) {
         achievements[id] = true;
         let bonus = getAchievementReward(id);
-        addPrince DiamondCoins(bonus);
+        addDiamondCoins(bonus);
         showAchievementPopup(id, bonus);
       }
     }
@@ -1415,7 +1415,7 @@
       }
 
       let reward = getDailyRewardAmount();
-      addPrince DiamondCoins(reward);
+      addDiamondCoins(reward);
       lastHutReward = now;
 
       updateCoinsAndShop();
@@ -1954,7 +1954,7 @@
 
       rolls++;
       let coinReward = getCoinReward(item);
-      addPrince DiamondCoins(coinReward);
+      addDiamondCoins(coinReward);
 
       document.getElementById("rollCount").textContent = rolls;
       document.getElementById("coinCount").textContent = cheetCoins;
@@ -2151,7 +2151,7 @@
         let coinReward = getCoinReward(item);
 
         rolls++;
-        addPrince DiamondCoins(coinReward);
+        addDiamondCoins(coinReward);
         totalCoinReward += coinReward;
 
         if (inventory[item.name]) {
